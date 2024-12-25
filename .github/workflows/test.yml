@@ -1,0 +1,35 @@
+name: Foundry Test
+on:
+  push:
+    paths:
+      - "**"
+
+env:
+  FOUNDRY_PROFILE: ci
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Run Forge build
+        run: |
+          forge --version
+          forge build --sizes --via-ir
+        id: build
+
+      - name: Run Forge tests
+        env:
+          MAINNET_RPC: ${{ secrets.MAINNET_RPC }}
+          RPC: ${{ secrets.RPC }}
+        run: |
+          forge test -vvv --via-ir
+        id: test

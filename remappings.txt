@@ -1,0 +1,7 @@
+@prb/math/=lib/prb-math/src/
+@openzeppelin/=lib/openzeppelin-contracts/
+@uniswap/v3-core/=lib/v3-core/contracts/
+@uniswap/v3-periphery/=lib/v3-periphery/contracts/
+@uniswap/v3-core/contracts/=lib/v3-core/contracts/
+@chainlink/contracts=lib/chainlink-brownie-contracts/contracts/
+@solady/=lib/solady/src/
