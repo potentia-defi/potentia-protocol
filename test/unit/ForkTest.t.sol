@@ -35,7 +35,7 @@ contract ForkTest is Test {
     bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
 
     function setUp() public {
-        vm.createSelectFork(vm.rpcUrl("eth"));
+        vm.createSelectFork(vm.rpcUrl("https://base-sepolia-rpc.publicnode.com"));
         utilities = new Utilities();
         address payable[] memory _users = utilities.createUsers(4);
         users = _users;
