@@ -22,12 +22,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          forge install OpenZeppelin/openzeppelin-contracts@0.6.1 --no-commit
+          forge install OpenZeppelin/openzeppelin-contracts --no-commit
           forge install foundry-rs/forge-std --no-commit
           forge install uniswap/v3-core --no-commit
           forge install PaulRBerg/prb-math --no-commit
           forge install SquaredLab-io/v3-periphery --no-commit
-          forge install smartcontractkit/chainlink-brownie-contracts --no-commit
+          forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
           forge install vectorized/solady --no-commit
 
       - name: Run Forge build

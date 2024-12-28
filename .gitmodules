@@ -12,10 +12,10 @@
 	url = https://github.com/SquaredLab-io/v3-periphery
 [submodule "lib/chainlink-brownie-contracts"]
 	path = lib/chainlink-brownie-contracts
-	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts@0.6.1
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
-	url = https://github.com/OpenZeppelin/openzeppelin-contracts@0.6.1
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
 [submodule "lib/solady"]
 	path = lib/solady
 	url = https://github.com/vectorized/solady
