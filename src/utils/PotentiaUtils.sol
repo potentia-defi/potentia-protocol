@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.20;
 
 import {UD60x18 as UD, ud, intoSD59x18 as toSD, intoUint256 as toUint} from "@prb/math/UD60x18.sol";

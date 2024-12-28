@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.20;
 
 import "./utils/Errors.sol";
@@ -276,12 +276,12 @@ contract PotentiaPool is ReentrancyGuard, AccessControl {
         applyFunding(halfTime, x);
         _adjustPriceRef(p);
 
+        underlying.safeTransferFrom(msg.sender, address(this), amt);
+
         UD feeScaled = (normAmt(amt, underlyingPrecision) * protocolFee);
         UD fee = denormAmt(toUint(feeScaled), underlyingPrecision);
         feeGrowth = feeGrowth + fee;
         amt -= toUint(fee);
-
-        underlying.safeTransferFrom(msg.sender, address(this), amt);
 
         isLong ? _long(amt, true, fee, x) : _short(amt, true, fee, x);
     }
@@ -304,7 +304,9 @@ contract PotentiaPool is ReentrancyGuard, AccessControl {
     /// @notice Withdraw the accumulated protocol fee
     /// @dev Can only be called by the PROTOCOL role
     function withdraw() external onlyRole(PROTOCOL) nonReentrant {
-        underlying.safeTransfer(protocol, toUint(feeGrowth));
+        uint256 feesToWithdraw = toUint(feeGrowth);
+        feeGrowth = ud(0);
+        underlying.safeTransfer(protocol, feesToWithdraw);
     }
 
     /// @notice This function opens or closes the long position internally

@@ -13,3 +13,6 @@ eth = "${RPC}"
 
 [fuzz]
 runs = 256
+
+
+license = ['BUSL-1.1', 'GPL-3.0-or-later']
