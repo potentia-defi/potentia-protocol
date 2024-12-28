@@ -3,9 +3,13 @@
 <div align="center">
   
 [![License: BUSL-1.1](https://img.shields.io/badge/License-BUSL%201.1-blue.svg)](LICENSE.md)
-[![Docs](https://img.shields.io/badge/docs📚-Technical_Specifications-blue)](docs/)
-[![Twitter](https://img.shields.io/badge/Twitter-00acee)](https://twitter.com/PotentiaProtocol)
-[![Tests](https://img.shields.io/badge/Tests-E2E_Coverage-green)](tests/)
+[![Docs](https://img.shields.io/badge/docs📚-Technical_Specifications-blue)](https://docs.geniedex.io/)
+[![Unit Testing](https://img.shields.io/github/actions/workflow/status/potentia-defi/potentia-protocol/test.yml?label=Unit%20Testing&logo=github)](https://github.com/potentia-defi/potentia-protocol/actions/workflows/test.yml)
+[![Fuzz Testing](https://img.shields.io/github/actions/workflow/status/potentia-defi/potentia-protocol/fuzz.yml?label=Fuzz%20Testing&logo=github)](https://github.com/potentia-defi/potentia-protocol/actions/workflows/fuzz.yml)
+[![Contracts Architecture](https://img.shields.io/badge/docs-Contracts_Architecture-blue)](https://docs.geniedex.io/protocol-concepts/potentia.html)
+[![User Flow](https://img.shields.io/badge/docs-User_Flow-blue)](https://docs.geniedex.io/protocol-concepts/user-flows.html)
+
+
 
 </div>
 

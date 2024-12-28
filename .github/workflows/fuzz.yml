@@ -1,0 +1,31 @@
+name: Forge Fuzz Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  FOUNDRY_PROFILE: ci
+
+jobs:
+  fuzz:
+    name: Forge Fuzz Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        
+      - name: Run Forge build
+        run: |
+          forge --version
+          forge build
+        
+      - name: Run Forge fuzz tests
+        run: |
+          forge test --match-contract LongShortFuzz -vvv
