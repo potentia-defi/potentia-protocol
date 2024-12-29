@@ -7,13 +7,13 @@ License text copyright (c) 2017 MariaDB Corporation Ab, All Rights Reserved.
 
 Parameters
 
-Licensor:            SquaredLabs Pte. Ltd.
+Licensor:            Squared Labs Pte. Ltd.
 
 Licensed Work:       Potentia Protocol and GenieDEX
-                     The Licensed Work is (c) 2024 SquaredLabs Pte. Ltd.
+                     The Licensed Work is (c) 2024 Squared Labs Pte. Ltd.
 
 Additional Use Grant: None (All uses, including partnerships, must be explicitly 
-                      approved by SquaredLabs Pte. Ltd.)
+                      approved by Squared Labs Pte. Ltd.)
 
 Change Date:         December 29, 2027
 
@@ -23,11 +23,11 @@ Change License:      GNU General Public License v3.0 or later
 
 Terms
 
-License Grant: The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. Non-production use means use in a development, testing, or academic environment that is not publicly deployed or monetized. Any use of the Licensed Work, including testing, partnerships, or pilot deployments, requires prior written approval from SquaredLabs Pte. Ltd.
+License Grant: The Licensor hereby grants you the right to copy, modify, create derivative works, redistribute, and make non-production use of the Licensed Work. Non-production use means use in a development, testing, or academic environment that is not publicly deployed or monetized. Any use of the Licensed Work, including testing, partnerships, or pilot deployments, requires prior written approval from Squared Labs Pte. Ltd.
 
 Change Date and License Transition: Effective on the Change Date (December 29, 2027), the Licensor grants you rights under the terms of the Change License (GPLv3). Upon this transition, the rights granted in this License terminate.
 
-Commercial Use Restriction: Commercial use of the Licensed Work, including but not limited to deployment on public blockchains, integration into revenue-generating services, or use in production environments, is prohibited without a separate commercial license issued by SquaredLabs Pte. Ltd.
+Commercial Use Restriction: Commercial use of the Licensed Work, including but not limited to deployment on public blockchains, integration into revenue-generating services, or use in production environments, is prohibited without a separate commercial license issued by Squared Labs Pte. Ltd.
 
 Applicability and Derivative Works: All copies of the original and modified Licensed Work, as well as derivative works, are subject to this License. This License applies separately to each version of the Licensed Work, with Change Dates potentially differing for each version.
 

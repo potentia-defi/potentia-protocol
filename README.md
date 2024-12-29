@@ -144,7 +144,7 @@ Developers can deploy unique financial instruments with customizable parameters,
 
 **Potentia Protocol** is licensed under the Business Source License 1.1 (BUSL-1.1):
 * Non-commercial use is permitted
-* Commercial use requires explicit approval from **SquaredLabs Pte. Ltd.**
+* Commercial use requires explicit approval from **Squared Labs Pte. Ltd.**
 * Transitions to GPLv3 on December 29, 2027
 
 For licensing inquiries: [Admin@squaredlabs.io](mailto:Admin@squaredlabs.io)
@@ -154,5 +154,5 @@ For more details, see [LICENSE](LICENSE.md).
 ---
 
 <div align="center">
-Built with ❤️ by SquaredLabs
+Built with ❤️ by Squared Labs
 </div>
